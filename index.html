@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div
+      id="root"
+      style="
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(76, 73, 73);
+        height: 100vh;
+      "
+    ></div>
+
+    <script type="text/babel">
+      var main_container = {
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
+        width: "400px",
+        height: "400px",
+
+        backgroundColor: "white",
+      };
+
+      function Div1() {
+        return (
+          <div style={main_container}>
+            <img
+              src=" https://th.bing.com/th/id/OIP.UF-o0-S1zs-I8cNFaxWfHQHaEK?pid=ImgDet&rs=1"
+              style={{ width: "100px", height: "100px", borderRadius: "50px" }}
+            />
+
+            <h3>Ashutosh Kumar</h3>
+            <p>Never give up</p>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "row",
+              }}
+            >
+              <div style={{ marginRight: "1em" }}>
+                <p style={{ color: "blue" }}>120</p>
+                <p style={{ color: "gray", marginTop: "-1em" }}>Post</p>
+              </div>
+              <div style={{ marginRight: "1em" }}>
+                <p style={{ color: "blue", paddingLeft: "1em" }}>500</p>
+                <p style={{ color: "gray", marginTop: "-1em" }}>Followers</p>
+              </div>
+              <div>
+                <p style={{ color: "blue", paddingLeft: "1em" }}>120</p>
+                <p style={{ color: "gray", marginTop: "-1em" }}>Following</p>
+              </div>
+            </div>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "row",
+              }}
+            >
+              <div
+                style={{
+                  marginRight: "1em",
+                }}
+              >
+                <button
+                  style={{
+                    backgroundColor: "blue",
+                    color: "white",
+                    width: "100%",
+                    fontSize: "17px",
+                    borderRadius: "10px",
+                  }}
+                >
+                  Follow
+                </button>
+              </div>
+              <div>
+                <button
+                  style={{
+                    backgroundColor: "pink",
+                    color: "white",
+                    width: "100%",
+                    fontSize: "17px",
+                    borderRadius: "10px",
+                  }}
+                >
+                  Message
+                </button>
+              </div>
+            </div>
+          </div>
+        );
+      }
+
+      function Component() {
+        return (
+          <div>
+            <Div1 />
+          </div>
+        );
+      }
+
+      ReactDOM.render(<Component />, document.getElementById("root"));
+    </script>
+  </body>
+</html>
